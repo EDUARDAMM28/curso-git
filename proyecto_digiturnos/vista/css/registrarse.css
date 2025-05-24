@@ -1,0 +1,151 @@
+body{
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: sans-serif;
+
+    background: linear-gradient(to right, #d81b60, #fff8e1);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+}
+
+
+.container{
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    width: 450px;
+
+    height: 500px;
+
+}
+
+
+h2{
+
+    color: #d81b60;
+
+    margin-bottom: 50px;
+
+}
+
+
+input[type="text"],
+
+input[type="text"]{
+
+    justify-content: center ;
+
+    padding: 15px;
+
+    border: 1px solid #f8bbd0;
+
+    border-radius: 20px;
+
+    background-color: #fff0f5;
+
+    margin: 8px 5px;
+
+}
+
+
+.Fecha{
+
+    text-align: left ;
+
+    padding: 10px;
+
+}
+
+
+label{
+
+    color:#d81b60;
+
+    font-weight: bold;
+    
+
+}
+
+
+input[type="date"]{
+
+    text-align:  center;
+
+    width: 50%;
+
+    padding: 10px;
+
+    border: 1px solid #f8bbd0;
+
+    border-radius: 20px;
+
+    background-color: #fff0f5;
+
+}
+
+
+input[type="email"],
+
+input[type="password"],
+
+input[type="password_password"]{
+
+    width: 80%;
+
+    padding: 10px;
+
+    margin: 8px 5px;
+
+    border-radius: 20px;
+
+    background-color: #fff0f5;
+
+    border: 1px solid #f8bbd0;
+
+}
+
+
+button{
+
+    background-color: #ec407a;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    transition:  0.3s;
+
+} 
+
+
+a{
+
+    text-decoration: none;
+
+    color: #ad1457;
+
+}

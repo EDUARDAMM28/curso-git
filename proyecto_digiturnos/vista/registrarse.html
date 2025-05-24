@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vista/css/registrarse.css">
+</head>
+<body>
+    <div class="container">
+       
+        <h2>Registrate</h2>
+
+        <form action="../vista/inicio.html" method="get" >
+
+            <input type="text" id="name"name="name" placeholder="Nombre" required>
+
+            <input type="text" id="lastname" name="lastname" placeholder="Apellido" required>
+
+            <div class="Fecha">
+                <label for="date">Fecha de Nacimiento</label>
+                <input type="date" id="date" name="date"  required>
+            </div>
+
+            <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+            <input type="password" id="password_password" name="password_password" placeholder="Confirmar Contraseña" >
+
+            <button type="submit" value="Registrarse">Regístrarse</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="../vista/incio_de_sesion.html">iniciar</a></p>
+    </div>
+</body>
+</html>         

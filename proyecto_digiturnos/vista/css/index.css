@@ -1,0 +1,590 @@
+/* Reseteo básico para asegurar que el tamaño de las cajas se calcule correctamente */
+*{
+
+    box-sizing: border-box;
+
+}
+
+
+/* Estilos para la cabecera de la página */
+header{
+
+    background-color: #fce4ec; /* Un color rosa clarito para el fondo */
+
+}
+
+
+/* Estilos para el logo dentro de la cabecera */
+header .logo{
+
+    margin: 0; /* Elimina los márgenes alrededor del logo */
+
+    padding: 25px 30px; /* Espacio alrededor del texto del logo */
+
+    font-weight: bold; /* Texto del logo en negrita */
+
+    color: #d81b60; /* Color rosa fuerte para el texto del logo */
+
+    font-size: 1.5em; /* Tamaño de la fuente del logo (1.5 veces el tamaño normal) */
+
+}
+
+
+/* Estilos para el contenedor principal de la página */
+.container{
+
+    max-width: 800px; /* Ancho máximo del contenido */
+
+    margin: auto; /* Centra el contenedor horizontalmente */
+
+}
+
+
+/* Estilos para el contenedor interno de la cabecera (para el logo y la navegación) */
+header .container_1{
+
+    display: flex; /* Permite alinear los elementos dentro */
+
+    flex-direction: column; /* Coloca los elementos uno debajo del otro en pantallas pequeñas */
+
+    align-items: center; /* Centra los elementos horizontalmente */
+
+}
+
+
+/* Estilos para la navegación dentro de la cabecera */
+header nav{
+
+    display: flex; /* Permite alinear los enlaces */
+
+    flex-direction: column; /* Coloca los enlaces uno debajo del otro en pantallas pequeñas */
+
+    text-align: center; /* Centra el texto de los enlaces */
+
+    padding-bottom: 10px; /* Espacio debajo de los enlaces */
+
+    font-size: 1em; /* Tamaño de la fuente de los enlaces */
+
+}
+
+
+/* Estilos para los enlaces de la navegación */
+header a{
+
+    font-size: 0.8em; /* Tamaño de l   a fuente de los enlaces (un poco más pequeño) */
+
+    padding: 2px 5px; /* Espacio alrededor del texto de los enlaces */
+
+    text-decoration: none; /* Quita la línea de subrayado de los enlaces */
+
+    font-weight: bold; /* Texto de los enlaces en negrita */
+
+    color: black; /* Color negro para el texto de los enlaces */
+
+}
+
+
+/* Estilos para cuando el ratón pasa por encima de un enlace */
+header a:hover{
+
+    color: #e63a79; /* Cambia a un color rosa más fuerte al pasar el ratón */
+
+}
+
+
+/* Estilos para el cuerpo de la página */
+body{
+
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif ; /* Tipo de letra principal */
+
+    margin: 0; /* Elimina los márgenes alrededor del cuerpo */
+
+}
+
+
+/* Estilos para los encabezados h1, h2 y h3 */
+h1{font-size: 3em;} /* El encabezado más grande */
+
+h2{font-size: 2.4em;}
+
+h3{font-size: 1.8em;}
+
+
+/* Estilos para los párrafos */
+p{font-size: 1.2em;}
+
+
+/* Estilos para los botones */
+button{
+
+    font-size: 1.5em; /* Tamaño grande de la fuente */
+
+    font-weight: bold; /* Texto en negrita */
+
+    padding: 2vh; /* Espacio grande dentro del botón */
+
+    border-radius: 10px; /* Bordes redondeados */
+
+    border: 2px solid rgb(5, 5, 5); /* Borde negro */
+
+    box-shadow: 2px 2px 10px rgb(3, 2, 2); /* Sombra suave */
+
+    color: white; /* Texto blanco */
+
+    background-color: #d81b60; /* Fondo rosa fuerte */
+
+    cursor: pointer; /* Cambia el cursor al pasar por encima indicando que es clickable */
+
+}
+
+
+/* Estilos para cuando el ratón pasa por encima del botón */
+button:hover{
+
+    background-color: #66064e; /* Cambia a un color morado oscuro al pasar el ratón */
+
+}
+
+
+/* Estilos para el botón con la clase "button_1" */
+button_1{
+
+    font-size: 1.4em;
+
+    font-weight: bold;
+
+    padding: 2vh;
+
+    border-radius: 10px;
+
+    border: 2px solid rgb(0, 0, 0);
+
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+
+    color: #b99f07; /* Color amarillo dorado para el texto */
+
+    background-color: #030003; /* Fondo negro muy oscuro */
+
+    cursor: pointer;
+
+}
+
+
+/* Estilos para cuando el ratón pasa por encima del botón con la clase "button_1" */
+button_1:hover{
+
+    background-color: #807018; /* Cambia a un color amarillo dorado más claro al pasar el ratón */
+
+}
+
+
+button_2{
+
+    font-size: 1.4em;
+
+    font-weight: bold;
+
+    padding: 2vh;
+
+    border-radius: 10px;
+
+    border: 2px solid rgb(0, 0, 0);
+
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+
+    color: white; /* Color amarillo dorado para el texto */
+
+    background-color: rgb(153, 102, 204); /* Fondo negro muy oscuro */
+
+    cursor: pointer;
+
+}
+
+
+button_2:hover{
+
+    background-color: rgb(117, 54, 180); /* Cambia a un color amarillo dorado más claro al pasar el ratón */
+
+}
+
+#hero .container{
+
+    display: flex;
+    
+}
+
+/* Estilos para la sección "hero" (la primera sección grande) */
+#hero{
+
+    background-color: #fce4ec;
+
+    display: flex; /* Para alinear el contenido */
+
+    align-items: center; /* Centra verticalmente */
+
+    justify-content: center; /* Centra horizontalmente */
+
+    text-align: center; /* Centra el texto */
+
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+
+    height: 100%; /* Ocupa el 80% de la altura de la pantalla */
+
+    width: 100%;
+
+    color: black;
+
+    background-image: url(../img/download.jpg) ; /* Imagen de fondo */
+
+    
+
+    background-size: cover; /* La imagen de fondo cubre todo el espacio */
+
+    background-position: center; /* Centra la imagen de fondo */
+
+}
+
+
+/* Estilos para la sección "Somos-Estilo" */
+#Somos-Estilo{
+
+    align-items: center;/* Aquí podrías agregar estilos generales para esta sección si los tuvieras */
+
+}
+
+/* Estilos para la imagen dentro de la sección "Somos-Estilo" */
+
+
+/* Estilos para el contenedor dentro de la sección "Somos-Estilo" */
+#Somos-Estilo .container{
+
+    text-align: center;
+
+    padding: 200px 12px; /* Espacio grande arriba y abajo, pequeño a los lados */
+
+}
+
+
+/* Estilos para la sección "te-ofrecemos-diferenetes-estilos" */
+#servicios{
+
+    background-color: #fce4ec ; /* Fondo rosa clarito */
+
+}
+
+
+/* Estilos para el encabezado h2 dentro de la sección "te-ofrecemos-diferenetes-estilos" */
+#servicios h2{
+
+    padding: 100px ; /* Generalmente no se usa "auto" para padding, mejor usar valores específicos */
+
+    text-align: center; /* Centra el texto del encabezado */
+
+    margin: 0; /* Elimina los márgenes alrededor del encabezado */
+
+}
+
+
+/* Estilos para el contenedor dentro de la sección "servicios" */
+#servicios .container{
+
+    padding: 100px 0px; /* Espacio grande arriba y abajo, sin espacio a los lados */
+
+    text-align: center;
+
+}
+
+
+/* Estilos para los párrafos dentro de la sección "te-ofrecemos-diferenetes-estilos" */
+#servicios p{
+
+    display: none; /* Oculta los párrafos por defecto */
+
+}
+
+
+/* Estilos para las "cartas" (los contenedores de servicios) dentro de la sección */
+#servicios .carta{
+
+    background-position: center center; /* Centra la imagen de fondo si la hubiera */
+
+    background-size: cover; /* Cubre todo el espacio con la imagen de fondo */
+
+    padding: 50px ; /* Espacio dentro de la carta */
+
+    margin: 20px; /* Espacio alrededor de la carta */
+
+    border-radius: 15px; /* Bordes redondeados para la carta */
+
+    text-align: center; /* Centra el texto dentro de la carta */
+
+}
+
+
+/* Estilos específicos para la clase "carta" */
+.carta{
+
+    background-color: #fce4ec; /* Fondo rosa clarito */
+
+    padding: 100px 10px;
+
+}
+
+
+/* Estilos específicos para la clase "carta_1" */
+.carta_1{
+
+    background-color: white; /* Fondo blanco */
+
+    padding: 100px 10px;
+
+    text-align: center;
+
+}
+
+
+/* Estilos específicos para la clase "carta_2" */
+.carta_2{
+
+    background-color: white; /* Fondo rosa clarito */
+
+    padding: 100px 10px;
+
+    text-align: center;
+
+}
+
+
+.carta a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+
+.carta_1 a{
+
+    text-decoration: none;
+
+    color: #917b02;
+
+}
+
+
+.carta_2 a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+
+/* Estilos para la sección de registro */
+#registrate{
+
+    display: flex; /* Para alinear el contenido */
+
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+
+    justify-content: center; /* Centra verticalmente */
+
+    align-items: center; /* Centra horizontalmente */
+
+    text-align: center; /* Centra el texto */
+
+    height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
+
+    background-color: #fff; /* Fondo blanco para la sección de registro */
+
+}
+
+
+/* Estilos para el encabezado h2 dentro de la sección de registro */
+#registrate h2{
+
+    font-size: 9vh; /* Tamaño de la fuente basado en la altura de la pantalla */
+
+    color: #d81b60; /* Color rosa fuerte */
+
+}
+
+
+/* Estilos para el botón dentro de la sección de registro */
+#registrate button{
+
+    font-size: 5vh; /* Tamaño de la fuente basado en la altura de la pantalla */
+
+}
+
+
+#registrate a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+
+
+/* Media query para pantallas más grandes (ancho mínimo de 720px) */
+@media (min-width: 720px){
+    
+    
+    /* Estilos para la cabecera en pantallas más grandes */
+    header{
+    
+        position: fixed; /* Se mantiene fija */
+    
+        width: 100%;
+
+        border: 1px;
+
+        border-radius: 10px;
+
+        border-color: #d81b60;
+    
+    }
+
+    
+    /* Estilos para el contenedor interno de la cabecera en pantallas más grandes */
+    header .container_1{
+    
+        flex-direction: row; /* Coloca el logo y la navegación en la misma línea */
+    
+        justify-content: space-between; /* Espacio entre el logo y la navegación */
+    
+        align-items: center; /* Centra verticalmente el logo y la navegación */
+    
+    }
+
+    #hero .imagen-hero{
+        
+        align-items: center center; 
+          
+    }
+
+    
+    /* Estilos para la navegación en pantallas más grandes */
+    header nav{
+    
+        flex-direction:row ; /* Coloca los enlaces uno al lado del otro */
+    
+        padding-bottom: 0; /* Quita el padding inferior */
+    
+        padding-right: 20px; /* Añade espacio a la derecha */
+    
+    }
+
+    
+    /* Estilos para el contenedor dentro de la sección "Somos-Estilo" en pantallas más grandes */
+    #Somos-Estilo .container{
+    
+        flex-direction: flex; /* Coloca la imagen y el texto uno al lado del otro */
+    
+        justify-content: space-between; /* Espacio entre la imagen y el texto */
+    
+        align-items: center; /* Centra verticalmente la imagen y el texto */
+    
+    }
+
+    
+    #Somos-Estilo h2{
+    
+        color: #d81b60;
+    
+    }
+
+    
+    /* Estilos para el texto dentro de la sección "Somos-Estilo" en pantallas más grandes */
+    #Somos-Estilo text{ /* ¡Ojo! Aquí probablemente querías usar la etiqueta <p> o un <div> con una clase para el texto */
+    
+        width: 50%; /* Ocupa la mitad del ancho del contenedor */
+    
+        max-width: 600px; /* Ancho máximo del texto */
+    
+        text-align: initial; /* Alinea el texto a la izquierda */
+    
+        padding: 0px 40px; /* Espacio a los lados del texto */
+    
+        display: flex; /* Esto podría no ser necesario aquí, revisa tu HTML */
+    
+        flex-direction: column; /* Esto podría no ser necesario aquí, revisa tu HTML */
+    
+        justify-content: column; /* Esto podría no ser necesario aquí, revisa tu HTML */
+    
+    }
+
+    
+    /* Estilos para  la imagen dentro de la sección "Somos-Estilo" en pantallas más grandes */
+    #Somos-Estilo .imagen{
+    
+        background-position: center center;
+    
+        margin-left: 0%; /* Quita el margen izquierdo */
+    
+        float: center; /* Hace que la imagen flote a la izquierda */
+    
+        height: 300px; /* Altura fija de la imagen */
+    
+        width: 500px; /* Ancho fijo de la imagen */
+    
+        object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */ 
+       
+    }
+
+    
+    /* Estilos para el contenedor de los servicios en pantallas más grandes */
+    #servicios .programas{
+    
+        display: flex; /* Coloca las cartas una al lado de la otra */
+    
+        justify-content: center ; /* Centra las cartas horizontalmente */
+    
+        padding: 0px 30px; /* Espacio a los lados */
+    
+    }
+
+    
+    /* Estilos para las cartas de servicio en pantallas más grandes */
+    #servicios .carta{
+    
+        padding: 100px 100px; /* Más espacio dentro de las cartas */
+    
+        margin: 20px; /* Espacio entre las cartas */
+    
+    }
+
+
+    #servicios .carta_1{
+    
+        padding: 100px 100px;
+    
+        margin: 20px;
+    
+    }
+
+    
+    #servicios .carta_2{
+    
+        padding: 100px 100px;
+    
+        margin: 20px;
+    
+    }
+
+    
+    /* Estilos para el encabezado h2 de la sección de servicios en pantallas más grandes */
+    #servicios h2{
+    
+        text-align: center;
+    
+        height: 80px 80px; /* La altura se ajusta al contenido */
+    
+    }
+
+
+}

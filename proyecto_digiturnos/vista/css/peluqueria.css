@@ -1,0 +1,176 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+
+.container{
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+header{
+
+    background-color: #fce4ec;
+
+}
+
+
+header .logo{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 0;
+
+    padding: 35px 35px;
+
+    font-weight: bold;
+
+    color:#d81b60 ;
+
+    font-size: 2.5em;
+
+}
+
+
+header .container_1{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}  
+
+
+header nav{
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-bottom: 10px 10p ;
+
+    font-size: 2em;
+
+}
+
+
+header a{
+
+    font-size: 4vh;
+
+    padding: 2px 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: #920237;
+
+}
+
+
+header a:hover{
+
+    color: white;
+
+}
+
+
+#peluqueria{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+#peluqueria h1{
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    color: #d81b60;
+
+}
+
+
+#peluqueria p{
+
+    display: flex;
+
+    flex-direction: column;    
+
+    text-align: left;
+
+    color: black;
+
+    font-weight: bold;
+
+}
+
+
+#barber .imagen{
+
+    background-image: -o-linear-gradient(
+
+    0deg
+
+        rgba(0,0,0,0.5),
+
+        rgba(0,0,0,0.5)
+
+        );
+
+} 
+
+h1{font-size: 8vh;}
+
+p{font-size: 4vh;}
+
+
+
+@media (min-width: 720px){
+
+
+    header .container_1{
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+
+    header nav{
+
+        flex-direction: row;
+
+        padding-bottom: 4px 5px;
+
+        padding-right: 60px  ;
+
+    }
+
+}
